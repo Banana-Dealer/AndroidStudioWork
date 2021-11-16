@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/full"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/half" />
+
+    <Button
+        android:id="@+id/button_rent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="RENT FROM 30.00"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barrier_poster"
+        tools:text="RENT FROM R29,99" />
+
+    <Button
+        android:id="@+id/button_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="BUY FROM 32.00"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_end"
+        app:layout_constraintStart_toEndOf="@+id/button_rent"
+        app:layout_constraintTop_toTopOf="@+id/barrier_poster"
+        tools:text="BUY FROM R127,99" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="text_info, imageView2"/>
+
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/playlist"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        tools:text="Bad trip" />
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title"
+        android:text="March 2021 PG 84 minutes"
+        />
+
+
+    <ImageView
+        android:id="@+id/playlist"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@android:drawable/ic_input_get"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_under_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="0dp"
+        app:constraint_referenced_ids="button_buy,button_rent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_rent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/button_rent"
+        app:layout_constraintLeft_toRightOf="@id/imageView4"
+        app:layout_constraintRight_toLeftOf="@+id/imageView6"
+        app:srcCompat="@android:drawable/radiobutton_off_background"
+        />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        app:srcCompat="@android:drawable/toast_frame"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/imageView5"
+        app:layout_constraintRight_toLeftOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@id/button_rent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@android:drawable/presence_invisible"
+        app:layout_constraintLeft_toRightOf="@id/imageView6"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_rent"
+        />
+
+    <TextView
+        android:id="@+id/text_under"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/imageView4"
+        app:layout_constraintEnd_toEndOf="@id/imageView4"
+        android:text="242 Ratings"
+        app:layout_constraintTop_toBottomOf="@id/imageView4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_under1"/>
+
+    <TextView
+        android:id="@+id/text_under1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Family"
+        app:layout_constraintStart_toStartOf="@id/imageView5"
+        app:layout_constraintEnd_toEndOf="@id/imageView5"
+        app:layout_constraintTop_toBottomOf="@id/imageView5" />
+
+    <TextView
+        android:id="@+id/text_under2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="71%"
+        app:layout_constraintStart_toStartOf="@id/imageView6"
+        app:layout_constraintEnd_toEndOf="@id/imageView6"
+        app:layout_constraintTop_toBottomOf="@id/imageView6" />
+
+    <TextView
+        android:id="@+id/text_under3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Similar"
+        app:layout_constraintStart_toStartOf="@id/imageView7"
+        app:layout_constraintEnd_toEndOf="@id/imageView7"
+        app:layout_constraintTop_toBottomOf="@id/imageView7" />
+
+    <TextView
+        android:id="@+id/textview_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="16dp"
+        android:text="Bad Trip is a 2021 American hidden camera comedy film directed by Kitao Sakurai. The film follows two best friends (Eric André and Lil Rel Howery) who take a road trip from Florida to New York City so one of them can declare his love for his high school crush (Michaela Conlin), all the while being chased by the other's criminal sister (Tiffany Haddish), whose car they have stolen for the trip."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_under" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/button_rent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/button_rent"
+        app:layout_constraintEnd_toEndOf="@+id/button_buy"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/text_under"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/button_rent"
+        app:layout_constraintEnd_toEndOf="@+id/button_buy"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

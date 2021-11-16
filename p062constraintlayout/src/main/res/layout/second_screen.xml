@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="60dp"/>
+
+
+    <ImageView
+        android:id="@+id/image_head"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/ANDROID"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_vertical_start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:scaleType="center"
+        />
+
+    <ImageView
+        android:id="@+id/image_under_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        app:layout_constraintTop_toBottomOf="@id/guideline_vertical_start"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.35"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_phone"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintRight_toLefttOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_head"
+        app:srcCompat="@android:drawable/sym_action_call"
+        />
+    <TextView
+        android:id="@+id/textview_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(650) 555-1234"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toRightOf="@id/image_phone"
+        app:layout_constraintTop_toBottomOf="@id/image_head"/>
+
+    <TextView
+        android:id="@+id/textview_under_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google Voice"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/textview_phone"
+        app:layout_constraintStart_toStartOf="@id/textview_phone"/>
+
+    <TextView
+        android:id="@+id/textview_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="(650) 555-4321"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@id/textview_phone"
+        app:layout_constraintEnd_toEndOf="@id/textview_phone"
+        app:layout_constraintTop_toBottomOf="@id/textview_phone"
+        android:layout_marginTop="75dp"/>
+
+    <TextView
+        android:id="@+id/textview_under_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/textview_mobile"
+        app:layout_constraintStart_toStartOf="@id/textview_mobile"/>
+
+    <View
+        android:id="@+id/view_under_mobile"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/textview_under_mobile"
+        app:layout_constraintStart_toStartOf="@id/textview_under_mobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:background="@color/teal_700"
+        android:id="@+id/image_email"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@android:drawable/sym_action_email"
+        app:layout_constraintStart_toStartOf="@id/image_phone"
+        app:layout_constraintEnd_toEndOf="@+id/image_phone"
+        app:layout_constraintTop_toBottomOf="@+id/view_under_mobile"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/textview_right_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:text="studio@android.com"
+        app:layout_constraintTop_toBottomOf="@id/view_under_mobile"
+        app:layout_constraintStart_toStartOf="@id/textview_mobile"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Work"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/textview_right_email"
+        app:layout_constraintTop_toBottomOf="@id/textview_right_email" />
+
+    <ImageView
+        android:id="@+id/image_right_phone"
+        android:background="@color/teal_700"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@android:drawable/stat_notify_chat"
+        app:layout_constraintTop_toBottomOf="@id/image_head"
+        app:layout_constraintBottom_toTopOf="@+id/image_right_mobile"
+        app:layout_constraintStart_toStartOf="@id/image_under_head"
+        app:layout_constraintEnd_toEndOf="@id/image_under_head"
+        android:layout_marginTop="20dp"
+        />
+    <ImageView
+        android:id="@+id/image_right_mobile"
+        android:background="@color/teal_700"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@android:drawable/stat_notify_chat"
+        app:layout_constraintTop_toBottomOf="@id/image_right_phone"
+        app:layout_constraintBottom_toTopOf="@id/view_under_mobile"
+        app:layout_constraintStart_toStartOf="@id/image_under_head"
+        app:layout_constraintEnd_toEndOf="@id/image_under_head"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline_vertical_start" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

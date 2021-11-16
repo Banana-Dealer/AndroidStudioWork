@@ -1,0 +1,15 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "My App"
+include ':app'
+include ':myapp2'
+include ':p062constraintlayout'
+include ':myapp3'
+include ':p063'
+include ':spravochnuk'
