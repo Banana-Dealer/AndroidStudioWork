@@ -1,3 +1,131 @@
 <resources>
-    <string name="app_name">spravochnuk</string>
+    <string name="app_name">Reference Book</string>
+    <string name="golub_text">Настоящие голуби - род птиц семейства Голубиные. Насчитывает он 35
+        видов, каждый из которых не может похвастаться крупными размерами (до 20-27 см).
+        Но несмотря на свои размеры, голуби играют довольно важную роль в жизни людей.
+    </string>
+    <string name="koshka_text">Домашние кошки - социальные животные, обладающие развитым
+        интеллектом, умением общаться, способностями испытывать и выражать сложные чувства и эмоции.
+        Являются самыми популярными в мире домашними питомцами.
+    </string>
+    <string name="orel_text">Орлы - род крупных хищных птиц семейства Ястребиные. Насчитывает он
+        несколько десятков видов, отличающихся крупными размерами (до 0,8-0,9 м) и отличным зрением,
+        благодаря которому орлы могут высматривать мелких наземных животных с большой высоты.
+    </string>
+    <string name="salamandra_text">Саламандры представляют собой довольно милые создания.
+        Они имеют небольшие размеры, вытянутое тело, 4 лапы и хвост - очень похожи на маленьких
+        ящерок.
+    </string>
+    <string name="sobaka_text">Собаки - домашние животные, отличающиеся ярко выраженным социальным
+        поведением и удивительными способностями к обучению, благодаря чему являются преданными и
+        полезными питомцами.
+    </string>
+    <string name="sova_text">Настоящие совы - семейство хищных птиц, насчитывающее 214 видов.
+        Активны они, преимущественно, в ночное время суток, поэтому далеко не все люди
+        довольствовались возможностью наблюдать сов воочию. А полюбоваться есть чем, ведь совы -
+        очень интересные птицы.
+    </string>
+    <string name="triton_text">Тритоны - это хвостатые земноводные. Представляют собой довольно
+        милых небольших животных, обитающих как в воде, так и на суше. Обладают сильной
+        регенерацией.
+    </string>
+    <string name="voolk_text">
+        Волки - это род млекопитающих из семейства псовых, включающий около десятка видов.
+        Волки являются довольно опасными хищниками.
+    </string>
+    <string name="zhaba_txt">
+        Жабы относятся к бесхвостым земноводным. Они являются довольно неприятными животными,
+        поскольку их тело покрыто ядовитыми железами, способными выделять яд. Обитают жабы, по
+        большей части, на суше. Но держатся при этом недалеко от водоёмов.
+    </string>
+<string name="triton_txt">
+    Тритоны - это хвостатые земноводные. Представляют собой довольно милых небольших животных,
+    обитающих как в воде, так и на суше. Обладают сильной регенерацией.
+</string>
+    <string name="jabka_txt">
+        Жабы относятся к бесхвостым земноводным. Они являются довольно неприятными животными,
+        поскольку их тело покрыто ядовитыми железами, способными выделять яд. Обитают жабы, по
+        большей части, на суше. Но держатся при этом недалеко от водоёмов.
+    </string>
+    <string name="salamandra_txt">
+        Саламандры представляют собой довольно милые создания. Они имеют небольшие размеры,
+        вытянутое тело, 4 лапы и хвост - очень похожи на маленьких ящерок.
+    </string>
+    <string-array name="bird_list">
+        <item>Golub</item>
+        <item>Orel</item>
+        <item>Sova</item>
+    </string-array>
+    <string-array name="mammals_list">
+        <item>Volk</item>
+        <item>Sobaka</item>
+        <item>Koshka</item>
+    </string-array>
+    <string-array name="amphibias_list">
+        <item>Triton</item>
+        <item>Jabka</item>
+        <item>Salamandra</item>
+    </string-array>
+    <string-array name="alpines_list">
+        <item>Armeria</item>
+        <item>Dianthus</item>
+        <item>Lewisia longipetala</item>
+    </string-array>
+    <string name="armeria_txt">
+        Hardy sea pink, or thrift, has a compact cushion of evergreen foliage and pretty pink
+        flowers in late spring and summer. Deadhead to keep it flowering.
+    </string>
+    <string name="dianthus_txt">
+        Pretty alpine pink ‘Popstar’ has a compact mound of foliage and deeply toothed pink flowers 
+        in summer. Its subtle scent is stronger on sunny days. Cut the stems down to around 5cm 
+        high in early autumn, otherwise the growth will become woody. Height: 20cm.
+    </string>
+    <string name="lewiia_txt">
+        This stunning alpine has star-shaped pink and apricot flowers from late spring to early 
+        summer. It likes a slightly damper soil than other alpines. If you can, plant it at an angle 
+        of 45 degrees, so that water can drain out of its rosette of evergreen foliage. 
+        Height: 10cm.
+    </string>
+    <string-array name="annual_behinnial_list">
+        <item>Cornflower</item>
+        <item>Poppy</item>
+        <item>Clarkia</item>
+    </string-array>
+    <string name="cornflower_txt">
+        El cornflower, also known as tile or scabiosa, is a natural annual herb from Europe.
+        It has stems which can measure up to 1 meter high, and some blue, or sometimes white flowers.
+        These are small, as they measure about 2 centimeters, but very numerous.
+    </string>
+    <string name="poppy_txt">
+        La poppy It is a herb that grows in the fields of Eurasia and North Africa. It is about 50
+        centimeters high, and has pinnate leaves without petioles. The flowers are made up of four
+        very delicate red petals, as they come off easily, and measure about 3
+        centimeters in diameter.
+    </string>
+    <string name="clarcia_txt">
+        Clarkia, or godesia, is an herb native to western North America.
+        It can measure 1 meter in height, and develops linear green leaves.
+        Its flowers are large, measuring up to 6 centimeters long, and pink or purple in color.
+    </string>
+    <string-array name="aquatic_list">
+        <item>Moneywort</item>
+        <item>Hornwort</item>
+        <item>Rotala Rotundifolia</item>
+    </string-array>
+    <string name="moneywort_txt">
+        This plant is also known as Brahmi. The plant can grow upto 12 inches, and it is easy to
+        grow an aquatic plant. The scientific name of moneywort is Bacopa Monnieri. The plant is
+        amphibious and can grow both above the water and underwater.
+    </string>
+    <string name="hornwort_txt">
+        Hornwort is scientifically known as Ceratophyllum Demursum. The plant belongs to the family
+        of Ceratophyllaceae, and this green-coloured aquarium plant can grow upto 24 inches.
+        The plant is a fast grower and can be grown floating or rooted in the aquarium.
+    </string>
+    <string name="rotala_txt">
+        This aquatic plant belongs to the Lythraceae, and it can grow upto 30 to 50 cm.
+        The mixture of red and green colour makes this plant a lovely choice to decorate aquariums.
+        It is an easy growing plant. If you want to see red leaves, then make sure to provide good
+        light.
+    </string>
 </resources>

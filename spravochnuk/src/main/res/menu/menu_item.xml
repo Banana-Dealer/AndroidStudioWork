@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/group1">
+    <item
+        android:id="@+id/bird"
+        android:title="Bird"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/golyb"
+                android:title="Golyb"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/orel"
+                android:title="Orel"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/sova"
+                android:title="Sova"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/mammals"
+        android:title="Mammals"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/volk"
+                android:title="Volk"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/sobaka"
+                android:title="Sobaka"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/koshka"
+                android:title="Koshka"
+                app:showAsAction="never" />
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/amphibians"
+        android:title="Amphibians"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/triton"
+                android:title="Triton" />
+            <item
+                android:id="@+id/jabba"
+                android:title="Jabka" />
+            <item
+                android:id="@+id/salamandra"
+                android:title="Salamandra" />
+        </menu>
+    </item>
+    </group>
+    <group
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/alpines"
+            android:title="Alpines"
+            app:showAsAction="never">
+            <menu>
+                <item
+                    android:id="@+id/armeria"
+                    android:title="Armeria"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/dianthus"
+                    android:title="Dianthus"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/lewisia"
+                    android:title="Lewisia Longipetala"
+                    app:showAsAction="never" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/annuals"
+            android:title="Annuals and biennials"
+            app:showAsAction="never">
+            <menu>
+                <item
+                    android:id="@+id/cornflower"
+                    android:title="Cornflower"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/poppy"
+                    android:title="Poppy"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/clarkia"
+                    android:title="Clarkia"
+                    app:showAsAction="never" />
+            </menu>
+
+        </item>
+
+        <item
+            android:id="@+id/aquatic"
+            android:title="Aquatic"
+            app:showAsAction="never">
+            <menu>
+                <item
+                    android:id="@+id/moneywort"
+                    android:title="Moneywort" />
+                <item
+                    android:id="@+id/hornwort"
+                    android:title="Hornwort" />
+                <item
+                    android:id="@+id/rotala"
+                    android:title="Rotala Rotundifolia" />
+            </menu>
+        </item>
+    </group>
+</menu>
